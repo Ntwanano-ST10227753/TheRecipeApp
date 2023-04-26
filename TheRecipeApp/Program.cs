@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-//this is a ingredient class, stores the Name, Quantity and unit
+//this is a ingredient class, stores the Name, Quantity and units of all ingredients
 namespace TheRecipeApp
 {
     class Ingredient
