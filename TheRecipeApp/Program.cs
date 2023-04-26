@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 
 
+//step class for the umber of steps required for your recipe
+class Step
+{
+    public int Number { get; set; }
+    public string Description { get; set; }
+}
+
+
 //this is a ingredient class, stores the Name, Quantity and units of all ingredients
 namespace TheRecipeApp
 {
@@ -11,6 +19,8 @@ namespace TheRecipeApp
         public double Quantity { get; set; }
         public string Unit { get; set; }
     }
+    
+
 
     // this is the recipe class that will be taking the recipe step by step
     class Recipe
@@ -30,3 +40,4 @@ namespace TheRecipeApp
         }
 
     }
+}
