@@ -125,6 +125,13 @@ namespace TheRecipeApp
 
             // Display scaled recipe
             recipe.DisplayRecipe();
+
+            // Reset scaling factor
+            recipe.ResetScalingFactor();
+            recipe.DisplayRecipe();
+
+            // Clear recipe
+            recipe.ClearRecipe();
         }
     }
 }
