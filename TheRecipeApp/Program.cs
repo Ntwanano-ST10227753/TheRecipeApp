@@ -75,4 +75,12 @@ namespace TheRecipeApp
         }
     }
 
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Recipe recipe = new Recipe();
+
+        }
+    }
 }
