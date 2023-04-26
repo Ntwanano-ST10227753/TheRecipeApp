@@ -11,4 +11,22 @@ namespace TheRecipeApp
         public double Quantity { get; set; }
         public string Unit { get; set; }
     }
-}
+
+    // this is the recipe class that will be taking the recipe step by step
+    class Recipe
+    {
+        private List<Ingredient> _ingredients = new List<Ingredient>();
+        private List<Step> _steps = new List<Step>();
+        private double _scalingFactor = 1.0;
+
+        public void AddIngredient(string name, double quantity, string unit)
+        {
+            _ingredients.Add(new Ingredient { Name = name, Quantity = quantity, Unit = unit });
+        }
+
+        public void AddStep(int number, string description)
+        {
+            _steps.Add(new Step { Number = number, Description = description });
+        }
+
+    }
