@@ -19,7 +19,7 @@ namespace TheRecipeApp
         public double Quantity { get; set; }
         public string Unit { get; set; }
     }
-    
+
 
 
     // this is the recipe class that will be taking the recipe step by step
@@ -39,5 +39,22 @@ namespace TheRecipeApp
             _steps.Add(new Step { Number = number, Description = description });
         }
 
+        //after saving your recipe, this part will help you display the recipeyou just entered
+
+        public void DisplayRecipe()
+        {
+            Console.WriteLine("Ingredients:");
+            foreach (var ingredient in _ingredients)
+            {
+                Console.WriteLine($"{ingredient.Quantity * _scalingFactor} {ingredient.Unit} {ingredient.Name}");
+            }
+
+            Console.WriteLine("\nSteps:");
+            foreach (var step in _steps)
+            {
+                Console.WriteLine($"{step.Number}. {step.Description}");
+            }
+        }
     }
+
 }
