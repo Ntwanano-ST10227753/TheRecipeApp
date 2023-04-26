@@ -81,6 +81,9 @@ namespace TheRecipeApp
         {
             Recipe recipe = new Recipe();
 
+            // Get number of ingredients
+            Console.Write("Enter the number of ingredients: ");
+            int numIngredients = int.Parse(Console.ReadLine());
         }
     }
 }
