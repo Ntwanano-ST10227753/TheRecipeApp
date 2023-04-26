@@ -115,6 +115,9 @@ namespace TheRecipeApp
                 recipe.AddStep(i, description);
             }
 
+            // Display recipe
+            recipe.DisplayRecipe();
+
         }
     }
 }
