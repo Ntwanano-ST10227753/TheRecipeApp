@@ -118,6 +118,10 @@ namespace TheRecipeApp
             // Display recipe
             recipe.DisplayRecipe();
 
+            // Scale recipe
+            Console.Write("\nEnter a scaling factor (0.5, 2, or 3): ");
+            double factor = double.Parse(Console.ReadLine());
+            recipe.ScaleRecipe(factor);
         }
     }
 }
