@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 
 //step class for the umber of steps required for your recipe
@@ -39,7 +40,7 @@ namespace TheRecipeApp
             _steps.Add(new Step { Number = number, Description = description });
         }
 
-        //after saving your recipe, this part will help you display the recipeyou just entered
+        //after saving your recipe, this part will help you display the recipe you just entered
 
         public void DisplayRecipe()
         {
@@ -54,6 +55,23 @@ namespace TheRecipeApp
             {
                 Console.WriteLine($"{step.Number}. {step.Description}");
             }
+        }
+        //Setting scale 
+        public void ScaleRecipe(double factor)
+        {
+            _scalingFactor = factor;
+        }
+        //resetting scale
+        public void ResetScalingFactor()
+        {
+            _scalingFactor = 1.0;
+        }
+        //removing the recent recipe that you entered
+        public void ClearRecipe()
+        {
+            _ingredients.Clear();
+            _steps.Clear();
+            _scalingFactor = 1.0;
         }
     }
 
