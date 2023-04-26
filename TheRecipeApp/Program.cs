@@ -84,6 +84,22 @@ namespace TheRecipeApp
             // Get number of ingredients
             Console.Write("Enter the number of ingredients: ");
             int numIngredients = int.Parse(Console.ReadLine());
+
+            // Get ingredient details
+            for (int i = 1; i <= numIngredients; i++)
+            {
+                Console.Write($"Ingredient {i} name: ");
+                string name = Console.ReadLine();
+
+                Console.Write($"Ingredient {i} quantity: ");
+                double quantity = double.Parse(Console.ReadLine());
+
+                Console.Write($"Ingredient {i} unit: ");
+                string unit = Console.ReadLine();
+
+                recipe.AddIngredient(name, quantity, unit);
+            }
+
         }
     }
 }
