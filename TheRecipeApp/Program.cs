@@ -100,6 +100,11 @@ namespace TheRecipeApp
                 recipe.AddIngredient(name, quantity, unit);
             }
 
+
+            // Get number of steps
+            Console.Write("Enter the number of steps: ");
+            int numSteps = int.Parse(Console.ReadLine());
+
         }
     }
 }
