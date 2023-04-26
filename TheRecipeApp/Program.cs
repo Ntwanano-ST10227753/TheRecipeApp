@@ -66,7 +66,7 @@ namespace TheRecipeApp
         {
             _scalingFactor = 1.0;
         }
-        //removing the recent recipe that you entered
+        //removing the recent recipe that you entered...
         public void ClearRecipe()
         {
             _ingredients.Clear();
