@@ -105,6 +105,16 @@ namespace TheRecipeApp
             Console.Write("Enter the number of steps: ");
             int numSteps = int.Parse(Console.ReadLine());
 
+
+            // Get step details
+            for (int i = 1; i <= numSteps; i++)
+            {
+                Console.Write($"Step {i} description: ");
+                string description = Console.ReadLine();
+
+                recipe.AddStep(i, description);
+            }
+
         }
     }
 }
