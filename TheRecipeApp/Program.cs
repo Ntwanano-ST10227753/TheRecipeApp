@@ -115,6 +115,7 @@ namespace RecipeApp
             recipes = new List<Recipe>();
         }
 
+        // this is where it will warn you if it exceeds the 300 count
         public void AddRecipe(Recipe recipe)
         {
             recipes.Add(recipe);
@@ -123,12 +124,12 @@ namespace RecipeApp
                 RecipeExceedsCaloriesEvent?.Invoke(recipe.Name, recipe.TotalCalories);
             }
         }
-
+         //the recipe collection list
         public List<Recipe> GetRecipes()
         {
             return recipes;
         }
-
+        //method that displays all saved recipes in alphabetical order
         public void DisplayRecipes()
         {
             Console.ForegroundColor = ConsoleColor.Green;
