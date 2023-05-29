@@ -183,6 +183,8 @@ namespace RecipeApp
                 string input = Console.ReadLine();
                 //this is a switch input so it proceeds step by step taking all details of each recipe
                 switch (input)
+
+                    //case 1 is there for the execution of enter a recipe
                 {
                     case "1":
                         Console.Write("Enter the recipe name: ");
@@ -228,6 +230,7 @@ namespace RecipeApp
                         Console.WriteLine("Recipe added successfully!");
                         break;
 
+                        //case 2 is there for if the user chooses to veiw stored recipes
                     case "2":
                         recipeBook.DisplayRecipes();
                         Console.Write("Enter the recipe name to view details (or '0' to go back to menu): ");
@@ -248,7 +251,7 @@ namespace RecipeApp
                             Console.ReadKey();
                         }
                         break;
-
+                        //case 3 is for deleting a recipe
                     case "3":
                         recipeBook.DisplayRecipes();
                         Console.Write("Enter the recipe name to delete (or '0' to go back to menu): ");
@@ -270,7 +273,7 @@ namespace RecipeApp
                             Console.ReadKey();
                         }
                         break;
-
+                        //case 4 simply closes the application after you are done using it
                     case "4":
                         Environment.Exit(0);
                         break;
