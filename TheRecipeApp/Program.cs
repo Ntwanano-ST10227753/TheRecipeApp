@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 
 namespace RecipeApp
@@ -100,8 +101,10 @@ namespace RecipeApp
         }
     }
 
+    //this is my delegate that wll call the method for total calorie count
     delegate void RecipeExceedsCaloriesHandler(string recipeName, int totalCalories);
 
+    //the method for calorie count
     class RecipeBook
     {
         private List<Recipe> recipes;
