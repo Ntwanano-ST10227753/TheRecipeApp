@@ -152,7 +152,7 @@ namespace RecipeApp
 
             Console.WriteLine();
         }
-        //this will get the recipe and display it according to the name it is saved as
+        //this will get the recipe and display it according to the name it is saved as in our list
         public Recipe GetRecipe(string recipeName)
         {
             return recipes.Find(r => r.Name == recipeName);
