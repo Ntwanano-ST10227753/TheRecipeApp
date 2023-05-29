@@ -181,7 +181,7 @@ namespace RecipeApp
                 Console.WriteLine("4. Close app");
 
                 string input = Console.ReadLine();
-
+                //this is a switch input so it proceeds step by step taking all details of each recipe
                 switch (input)
                 {
                     case "1":
