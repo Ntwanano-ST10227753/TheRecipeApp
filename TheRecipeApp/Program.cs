@@ -276,7 +276,7 @@ namespace RecipeApp
                         //case 4 simply closes the application after you are done using it
                     case "4":
                         Environment.Exit(0);
-                        break;
+                        break; 
 
                     default:
                         Console.WriteLine("Invalid input! Press any key to continue.");
