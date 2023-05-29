@@ -20,6 +20,7 @@ namespace RecipeApp
             totalCalories = 0;
         }
 
+        //thise are to get and set the user information for the recipes 
         public string Name
         {
             get { return name; }
@@ -52,7 +53,8 @@ namespace RecipeApp
             steps.Add(step);
         }
     }
-
+    
+    
     class Ingredient
     {
         private string name;
@@ -61,6 +63,7 @@ namespace RecipeApp
         private int calories;
         private string foodGroup;
 
+        //this is where i will be storing the new name,quantity/UOF,foodgroup more or less like seting
         public Ingredient(string name, double quantity, string unitOfMeasurement, int calories, string foodGroup)
         {
             this.name = name;
@@ -70,6 +73,7 @@ namespace RecipeApp
             this.foodGroup = foodGroup;
         }
 
+        //this is the part that gets all the different properties if each recipe
         public string Name
         {
             get { return name; }
